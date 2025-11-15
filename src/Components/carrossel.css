@@ -87,12 +87,13 @@
     padding: 8px 12px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .carrossel-wrapper {
-    width: 350px;        
-    max-width: 90%;      
-    padding: 55px;
-    margin-left: -4%;
+    width: 95vw;
+    padding: 10px;
+    margin: 20px auto 20px 0;
+    margin-left: 4vw;
+    max-width: none;
   }
 }
 @media (max-width: 576px) {

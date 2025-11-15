@@ -7,9 +7,9 @@
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
-    width: 100%;
+    width: 70%;
     max-width: 300px; /* Limite a largura total em telas grandes */
-    margin: 20px auto; /* Centraliza o contêiner em telas grandes */
+    margin: 15px auto; /* Centraliza o contêiner em telas grandes */
     box-sizing: border-box;
 }
 

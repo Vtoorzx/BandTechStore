@@ -5,22 +5,14 @@
   border-radius: 20px;
   cursor: pointer;
   background-color: rgb(255, 255, 255);
-  padding: 4%;
-  display: flex;
-  gap: 15px;
-  margin-top: 4%;
-  width: 100%;
+  padding: 2vw;
+  margin: 30px auto 0;
+  width: 78%;
   box-sizing: border-box;
-  max-width: 100%;
-  flex-wrap: nowrap;
-  overflow: hidden; 
+  gap: 20px;
   
 }
 
-.sectionBotao > {
-  flex: 1 1 0; 
-  min-width: 0; 
-}
 
 
 
@@ -30,7 +22,7 @@
     border: 1px solid rgb(0, 132, 255); 
     background-color: white;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 5px 47px;
+    padding: 0.5em 3vw;
     cursor: pointer;
     
     display: inline-flex;
@@ -39,6 +31,8 @@
     white-space: nowrap;
    font-family: "Inter", sans-serif;
   font-weight: 600; 
+  max-width: 250px;
+  gap: 50px;
   }
 
 .botao1:hover {
@@ -106,6 +100,7 @@
     white-space: nowrap;
     font-family: "Inter", sans-serif;
   font-weight: 600; 
+  background-color: white;
 }
 .botao4:hover {
     background-color: rgb(218, 234, 250);
