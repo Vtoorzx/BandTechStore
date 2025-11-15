@@ -17,7 +17,7 @@ html, body {
   padding-top: 20px;
 }
 
- Wrapper central 
+
 .logo-quadrado-wrapper {
   position: relative;
   width: 470px; 
@@ -40,6 +40,7 @@ html, body {
   transform: translate(-50%, -50%);
   width: 420px;       
   z-index: 2;
+ 
 }
 
 /* TEXTOS */

@@ -16,11 +16,14 @@ export default function Carrossel() {
   const prev = () =>
     setIndex((prev) => (prev - 1 + marcas.length) % marcas.length);
 
-  // autoplay
-  useEffect(() => {
-    const interval = setInterval(next, 3000);
-    return () => clearInterval(interval);
-  }, [index]);
+ 
+useEffect(() => {
+  
+  const interval = setInterval(() => {
+    setIndex((prev) => (prev + 1) % marcas.length);
+  }, 3000);
+  return () => clearInterval(interval); 
+}, []); 
 
   return (
     <div className="carrossel-wrapper">
