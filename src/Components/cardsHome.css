@@ -1,105 +1,86 @@
+/* ========================================= */
+/* 1. ESTILOS BASE (DESKTOP E GRANDE) */
+/* ========================================= */
+
 .footerCards {
-  display: flex;                
-  justify-content: space-between;
-  gap: 20px;                    
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* Limite a largura total em telas grandes */
+    margin: 20px auto; /* Centraliza o contêiner em telas grandes */
+    box-sizing: border-box;
 }
 
+/* Aplica Flexbox para quebra de linha em telas menores */
+/* Por padrão, os cards ficam lado a lado */
 .footerCards > div {
-  flex: 1;                      
-  background-color: white;
-  color: black;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;           
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    flex: 1; /* Faz com que todos os 4 cards ocupem espaço igual */
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.divCards1, .divCards2, .divCards3 , .divCards4{
-    transition: transform 0.3 ease, box-shadow 0.3 ease;
+.divCards1, .divCards2, .divCards3, .divCards4 {
+    /* Corrigida a sintaxe da transição (faltava 's') */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     cursor: pointer;
 }
 
 .divCards1:hover,
 .divCards2:hover,
 .divCards3:hover,
-.divCards4:hover{
+.divCards4:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 1024px) {
-  .footerCards {
-      
-    max-width: 75%;      
-    padding: 70px;
-    margin-left: 18%;
-    margin-top: -3%;
-   
-  }
-}
-@media (max-width: 768px) {
-  .footerCards {
-    max-width: 55%;
-    padding: 30px;
-    margin-left: 25%;
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: 1%;
-    
-  }
+/* ========================================= */
+/* 2. MOBILE-FIRST E BREAKPOINTS */
+/* ========================================= */
+
+/* --- Mobile (DEFAULT: até 767px) --- */
+
+/* Força os cards a quebrar a linha e a se centralizar */
+.footerCards {
+    /* Permite a quebra de linha para a responsividade */
+    flex-wrap: wrap; 
+    /* Remove margens fixas e usa a largura total */
+    padding: 10px;
+    margin: 10px auto;
 }
 
-@media(max-width: 576px){
-    .footerCards{
-    max-width: 55%;
-    padding: 30px;
-    margin-left: 25%;
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: 1%;
-    
+.footerCards > div {
+    /* Define 2 cards por linha (49% + gap) */
+    flex: 0 0 calc(50% - 15px); /* Subtrai metade do gap para 2 colunas */
+    min-width: 150px; /* Garante que não fiquem muito pequenos */
+    margin-bottom: 15px; /* Adiciona espaço vertical entre as linhas */
+}
+
+/* --- Tablet (768px e acima) --- */
+@media (min-width: 768px) {
+    .footerCards {
+        flex-wrap: nowrap; /* Mantém os 4 cards na mesma linha */
+        justify-content: space-between;
+        max-width: 90%;
+        padding: 20px;
+    }
+    .footerCards > div {
+        /* Restaura o comportamento flex: 1 de desktop */
+        flex: 1; 
+        min-width: unset;
     }
 }
 
-@media(max-width: 480px){
-    .footerCards{
-        display:flex;
-        flex-wrap: wrap;
-        margin-left: 25%;
-    }
-}
-@media(max-width: 480px){
-    .divCards1 {
-        flex-basis: 49%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        font-size: 17px;
-    }
-}
-@media(max-width: 480px){
-    .divCards2 {
-        flex-basis: 49%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        font-size: 17px;
-    }
-}
-@media(max-width: 480px){
-    .divCards3 {
-        flex-basis: 49%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        font-size: 17px;
-    }
-}
-@media(max-width: 480px){
-    .divCards4 {
-        flex-basis: 49%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        font-size: 17px;
+/* --- Celular Pequeno (Até 480px) --- */
+@media (max-width: 480px) {
+    .footerCards > div {
+        /* Força 1 card por linha em telas muito pequenas */
+        flex: 0 0 100%; 
+        padding: 15px;
     }
 }
