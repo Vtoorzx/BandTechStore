@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Carrossel.css";
+import "./carrossel.css";
 
 const marcas = [
   "/marcas/arduino.png",
