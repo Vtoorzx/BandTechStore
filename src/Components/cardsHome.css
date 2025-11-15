@@ -1,0 +1,105 @@
+.footerCards {
+  display: flex;                /* coloca lado a lado */
+  justify-content: space-between;
+  gap: 20px;                    /* espaço entre os cards */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footerCards > div {
+  flex: 1;                      /* todos os cards têm a mesma largura */
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;           /* centraliza o texto */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* deixa bonito */
+}
+
+.divCards1, .divCards2, .divCards3 , .divCards4{
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+    cursor: pointer;
+}
+
+.divCards1:hover,
+.divCards2:hover,
+.divCards3:hover,
+.divCards4:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1024px) {
+  .footerCards {
+      
+    max-width: 75%;      /* garante que caiba na tela */
+    padding: 70px;
+    margin-left: 18%;
+    margin-top: -3%;
+   
+  }
+}
+@media (max-width: 768px) {
+  .footerCards {
+    max-width: 55%;
+    padding: 30px;
+    margin-left: 25%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    
+  }
+}
+
+@media(max-width: 576px){
+    .footerCards{
+    max-width: 55%;
+    padding: 30px;
+    margin-left: 25%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    
+    }
+}
+
+@media(max-width: 480px){
+    .footerCards{
+        display:flex;
+        flex-wrap: wrap;
+        margin-left: 25%;
+    }
+}
+@media(max-width: 480px){
+    .divCards1 {
+        flex-basis: 49%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 17px;
+    }
+}
+@media(max-width: 480px){
+    .divCards2 {
+        flex-basis: 49%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 17px;
+    }
+}
+@media(max-width: 480px){
+    .divCards3 {
+        flex-basis: 49%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 17px;
+    }
+}
+@media(max-width: 480px){
+    .divCards4 {
+        flex-basis: 49%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-size: 17px;
+    }
+}

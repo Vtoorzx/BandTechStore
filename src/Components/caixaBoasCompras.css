@@ -1,0 +1,57 @@
+.fundoCaixa {
+    background-color: white;
+    border-radius: 10px;
+    width: 380px;
+    max-width: 500px;
+
+    padding: 1%;
+    margin: 2%;
+
+    display: flex;              /* coloca ícone + texto lado a lado */
+    align-items: center;        /* alinha verticalmente */
+    gap: 10px;                  /* espaço entre ícone e texto */
+}
+
+.textoCaixa {
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-caixa {
+    margin-left: 37%;
+}
+
+@media (max-width: 1024px) {
+  .fundoCaixa {
+      
+    max-width: 89%;      /* garante que caiba na tela */
+    padding: 25px;
+    margin-left: 5%;
+    
+   
+  }
+}
+@media (max-width: 768px) {
+  .fundoCaixa {
+    width: 370px;        /* reduz um pouco */
+    max-width: 80%;      /* garante que caiba na tela */
+    padding: 15px;
+    margin-left: -15%;
+  }
+  }
+  @media (max-width: 480px) {
+  .fundoCaixa {
+    width: 370px;        /* reduz um pouco */
+    max-width: 80%;      /* garante que caiba na tela */
+    padding: 15px;
+    margin-left: -20%;
+  }
+  }
+  @media (max-width: 576px) {
+  .fundoCaixa {
+    width: 370px;        /* reduz um pouco */
+    max-width: 80%;      /* garante que caiba na tela */
+    padding: 15px;
+    margin-left: -18%;
+  }
+  }

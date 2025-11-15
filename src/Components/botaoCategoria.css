@@ -1,0 +1,368 @@
+
+
+
+.sectionBotao {
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 4%;
+  display: flex;
+  gap: 15px;
+  margin-top: 4%;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden; /* impede estourar */
+  
+}
+
+.sectionBotao > * {
+  flex: 1 1 0; /* força os botões a encolherem */
+  min-width: 0; /* EVITA que ultrapassem */
+}
+
+
+
+.botao1 {
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    padding: 5px 47px;
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+   font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+
+.botao1:hover {
+    background-color: rgb(218, 234, 250);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+}
+
+.botao2{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    padding: 8px 59px;
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+
+.botao2:hover {
+    background-color: rgb(218, 234, 250);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+}
+
+.botao3{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    padding: 8px 34px;
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+.botao3:hover {
+    background-color: rgb(218, 234, 250);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+}
+
+.botao4{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    padding: 8px 16px;
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+.botao4:hover {
+    background-color: rgb(218, 234, 250);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+
+.botao5{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    padding: 8px 20px;
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+.botao5:hover {
+    background-color: rgb(218, 234, 250);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+}
+
+.botao6{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    padding: 8px 29px;
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+.botao6:hover {
+    background-color: rgb(218, 234, 250);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+}
+
+.botao7{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    padding: 8px 55px;
+    cursor: pointer;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+  font-weight: 600; /* deixa mais bonito */
+}
+.botao7:hover {
+    background-color: rgb(218, 234, 250);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+}
+
+@media (max-width: 1024px) {
+  .sectionBotao {
+      
+    max-width: 88%;      /* garante que caiba na tela */
+    padding: 25px;
+    margin-left: 20%;
+    max-width: 70%;
+   
+  }
+}
+@media (max-width: 768px) {
+  .sectionBotao {
+    max-width: 55%;
+    padding: 30px;
+    margin-left: 26%;
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+}
+@media(max-width: 768px){
+    .botao1{
+        max-width: 100%;
+        padding:  18px 70px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 768px){
+    .botao2{
+        max-width: 100%;
+        padding: 9px 76px;
+    }
+}
+
+@media(max-width:768px){
+    .botao3{
+        max-width: 90%;
+        padding: 8px 45px;
+    }
+}
+@media(max-width:768px){
+    .botao4{
+        max-width: 20%;
+        padding:  8px 45px;
+    }
+}
+@media(max-width:768px){
+    .botao5{
+        max-width: 50%;
+        padding: 10px 45px;
+    }
+}
+@media(max-width:768px){
+    .botao6{
+        max-width: 50%;
+        padding: 8px 42px;
+    }
+}
+@media(max-width:768px){
+    .botao7{
+        max-width: 50%;
+        padding: 8px 49px;
+    }
+}
+@media (max-width: 576px) {
+  .sectionBotao {
+    max-width: 55%;
+    padding: 35px;
+    margin-left: 25%;
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+}
+@media(max-width: 576px){
+    .botao1{
+        max-width: 100%;
+        padding:  12px 84px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 576px){
+    .botao2{
+        max-width: 100%;
+        padding:  12px 84px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 576px){
+    .botao3{
+        max-width: 100%;
+        padding:  10px 65px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 576px){
+    .botao4{
+        max-width: 100%;
+        padding:  10px 84px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 576px){
+    .botao5{
+        max-width: 100%;
+        padding:  10px 84px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 576px){
+    .botao6{
+        max-width: 100%;
+        padding:  10px 84px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 576px){
+    .botao7{
+        max-width: 100%;
+        padding:  10px 84px;
+        margin-left: -1%;
+    }
+}
+
+
+@media (max-width: 480px) {
+  .sectionBotao {
+    max-width: 55%;
+    padding: 35px;
+    margin-left: 26%;
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+}
+@media(max-width: 480px){
+    .botao1{
+        max-width: 100%;
+        padding:  12px 70px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 480px){
+    .botao2{
+        max-width: 100%;
+        padding:  12px 70px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 480px){
+    .botao3{
+        max-width: 100%;
+        padding:  12px 70px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 480px){
+    .botao4{
+        max-width: 100%;
+        padding:  12px 70px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 480px){
+    .botao5{
+        max-width: 100%;
+        padding:  12px 70px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 480px){
+    .botao6{
+        max-width: 100%;
+        padding:  12px 70px;
+        margin-left: -1%;
+    }
+}
+@media(max-width: 480px){
+    .botao7{
+        max-width: 100%;
+        padding:  12px 70px;
+        margin-left: -1%;
+    }
+}
