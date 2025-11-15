@@ -1,20 +1,20 @@
 .footerCards {
-  display: flex;                /* coloca lado a lado */
+  display: flex;                
   justify-content: space-between;
-  gap: 20px;                    /* espaço entre os cards */
+  gap: 20px;                    
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .footerCards > div {
-  flex: 1;                      /* todos os cards têm a mesma largura */
+  flex: 1;                      
   background-color: white;
   color: black;
   padding: 20px;
   border-radius: 12px;
-  text-align: center;           /* centraliza o texto */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* deixa bonito */
+  text-align: center;           
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .divCards1, .divCards2, .divCards3 , .divCards4{
@@ -33,7 +33,7 @@
 @media (max-width: 1024px) {
   .footerCards {
       
-    max-width: 75%;      /* garante que caiba na tela */
+    max-width: 75%;      
     padding: 70px;
     margin-left: 18%;
     margin-top: -3%;

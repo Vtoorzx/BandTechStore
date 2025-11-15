@@ -7,9 +7,9 @@
     padding: 1%;
     margin: 2%;
 
-    display: flex;              /* coloca ícone + texto lado a lado */
-    align-items: center;        /* alinha verticalmente */
-    gap: 10px;                  /* espaço entre ícone e texto */
+    display: flex;              
+    align-items: center;        
+    gap: 10px;                  
 }
 
 .textoCaixa {
@@ -24,7 +24,7 @@
 @media (max-width: 1024px) {
   .fundoCaixa {
       
-    max-width: 89%;      /* garante que caiba na tela */
+    max-width: 89%;      
     padding: 25px;
     margin-left: 5%;
     
@@ -33,24 +33,24 @@
 }
 @media (max-width: 768px) {
   .fundoCaixa {
-    width: 370px;        /* reduz um pouco */
-    max-width: 80%;      /* garante que caiba na tela */
+    width: 370px;        
+    max-width: 80%;     
     padding: 15px;
     margin-left: -15%;
   }
   }
   @media (max-width: 480px) {
   .fundoCaixa {
-    width: 370px;        /* reduz um pouco */
-    max-width: 80%;      /* garante que caiba na tela */
+    width: 370px;        
+    max-width: 80%;      
     padding: 15px;
     margin-left: -20%;
   }
   }
   @media (max-width: 576px) {
   .fundoCaixa {
-    width: 370px;        /* reduz um pouco */
-    max-width: 80%;      /* garante que caiba na tela */
+    width: 370px;        
+    max-width: 80%;      
     padding: 15px;
     margin-left: -18%;
   }

@@ -13,13 +13,13 @@
   box-sizing: border-box;
   max-width: 100%;
   flex-wrap: nowrap;
-  overflow: hidden; /* impede estourar */
+  overflow: hidden; 
   
 }
 
-.sectionBotao > * {
-  flex: 1 1 0; /* força os botões a encolherem */
-  min-width: 0; /* EVITA que ultrapassem */
+.sectionBotao > {
+  flex: 1 1 0; 
+  min-width: 0; 
 }
 
 
@@ -27,7 +27,7 @@
 .botao1 {
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    border: 1px solid rgb(0, 132, 255); 
     background-color: white;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 5px 47px;
@@ -38,19 +38,19 @@
     justify-content: center;
     white-space: nowrap;
    font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
-}
+  font-weight: 600; 
+  }
 
 .botao1:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    border-color: rgb(0, 102, 204); 
 }
 
 .botao2{
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    border: 1px solid rgb(0, 132, 255); 
     background-color: white;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 59px;
@@ -61,19 +61,19 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
+  font-weight: 600; 
 }
 
 .botao2:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    border-color: rgb(0, 102, 204);  
 }
 
 .botao3{
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    border: 1px solid rgb(0, 132, 255); 
     background-color: white;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 34px;
@@ -84,19 +84,18 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
+  font-weight: 600; 
 }
 .botao3:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    border-color: rgb(0, 102, 204);  
 }
 
 .botao4{
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); /* cor visível */
-    background-color: white;
+    border: 1px solid rgb(0, 132, 255); 
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 16px;
     cursor: pointer;
@@ -106,20 +105,20 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
+  font-weight: 600; 
 }
 .botao4:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    border-color: rgb(0, 102, 204);  
     font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
+  font-weight: 600;
 }
 
 .botao5{
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    border: 1px solid rgb(0, 132, 255); 
     background-color: white;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 20px;
@@ -130,18 +129,18 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
-}
+  font-weight: 600; 
 .botao5:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    border-color: rgb(0, 102, 204); 
+}
 }
 
 .botao6{
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    border: 1px solid rgb(0, 132, 255);
     background-color: white;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 29px;
@@ -152,18 +151,18 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
+  font-weight: 600; 
 }
 .botao6:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    border-color: rgb(0, 102, 204); 
 }
 
 .botao7{
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); /* cor visível */
+    border: 1px solid rgb(0, 132, 255); 
     background-color: white;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 55px;
@@ -174,18 +173,17 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; /* deixa mais bonito */
-}
+  font-weight: 600; 
 .botao7:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); /* mantém borda visível ao passar o mouse */
+    border-color: rgb(0, 102, 204);
 }
 
 @media (max-width: 1024px) {
   .sectionBotao {
       
-    max-width: 88%;      /* garante que caiba na tela */
+    max-width: 88%;     
     padding: 25px;
     margin-left: 20%;
     max-width: 70%;
@@ -365,4 +363,5 @@
         padding:  12px 70px;
         margin-left: -1%;
     }
+}
 }

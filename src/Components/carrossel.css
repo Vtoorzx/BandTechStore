@@ -1,7 +1,7 @@
 .carrossel-wrapper {
-  width: 400px;           /* tamanho fixo no desktop */
-  max-width: 100%;        /* não ultrapassa a tela */
-  margin: 20px auto;      /* centraliza */
+  width: 400px;           
+  max-width: 100%;        
+  margin: 20px auto;      
   background: white; 
   padding: 20px;
   border-radius: 12px;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-/* Container */
+
 .carrossel-track-container {
   overflow: hidden;
   flex: 1;
@@ -30,11 +30,11 @@
 
 .carrossel-item img {
   max-width: 60%;
-  width: 60%; /* garante proporcionalidade */
+  width: 60%; 
   height: auto;
 }
 
-/* Setas */
+
 .carrossel-btn {
   background: rgba(0,0,0,0.5);
   border: none;
@@ -59,20 +59,20 @@
 
 @media (max-width: 1024px) {
   .carrossel-wrapper {
-    width: 350px;        /* reduz um pouco */
-    max-width: 90%;      /* garante que caiba na tela */
+    width: 350px;        
+    max-width: 90%;      
     padding: 15px;
     margin-left: 43%;
   }
 }
 
-/* =============================== */
-/* RESPONSIVIDADE - TABLET         */
-/* =============================== */
+
+
+
 @media (max-width: 768px) {
   .carrossel-wrapper {
-    width: 350px;        /* reduz um pouco */
-    max-width: 90%;      /* garante que caiba na tela */
+    width: 350px;       
+    max-width: 90%;     
     padding: 15px;
     margin-left: 31%;
   }
@@ -89,16 +89,16 @@
 }
 @media (max-width: 480px) {
   .carrossel-wrapper {
-    width: 350px;        /* reduz um pouco */
-    max-width: 90%;      /* garante que caiba na tela */
+    width: 350px;        
+    max-width: 90%;      
     padding: 55px;
     margin-left: -4%;
   }
 }
 @media (max-width: 576px) {
   .carrossel-wrapper {
-    width: 400px;        /* reduz um pouco */
-    max-width: 90%;      /* garante que caiba na tela */
+    width: 400px;        
+    max-width: 90%;      
     padding: 15px;
     margin-left: 18%;
   }
