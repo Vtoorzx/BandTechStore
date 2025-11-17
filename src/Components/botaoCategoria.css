@@ -11,6 +11,7 @@
   box-sizing: border-box;
   gap: 20px;
   
+  
 }
 
 
@@ -32,7 +33,7 @@
    font-family: "Inter", sans-serif;
   font-weight: 600; 
   max-width: 250px;
-  gap: 50px;
+  margin: 1%;
   }
 
 .botao1:hover {
@@ -55,7 +56,8 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; 
+    font-weight: 600; 
+    margin: 1%;
 }
 
 .botao2:hover {
@@ -72,13 +74,13 @@
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 34px;
     cursor: pointer;
-    
     display: inline-flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; 
+     font-weight: 600; 
+     margin: 1%;
 }
 .botao3:hover {
     background-color: rgb(218, 234, 250);
@@ -99,8 +101,9 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; 
-  background-color: white;
+     font-weight: 600; 
+     background-color: white;
+     margin: 1%;
 }
 .botao4:hover {
     background-color: rgb(218, 234, 250);
@@ -124,11 +127,12 @@
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; 
-.botao5:hover {
+    font-weight: 600; 
+    botao5:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
     border-color: rgb(0, 102, 204); 
+    margin: 1%;
 }
 }
 
@@ -140,13 +144,13 @@
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 29px;
     cursor: pointer;
-    
     display: inline-flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
-  font-weight: 600; 
+     font-weight: 600; 
+     margin: 1%;
 }
 .botao6:hover {
     background-color: rgb(218, 234, 250);
@@ -162,13 +166,14 @@
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     padding: 8px 55px;
     cursor: pointer;
-    
     display: inline-flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
     font-family: "Inter", sans-serif;
   font-weight: 600; 
+}
+
 .botao7:hover {
     background-color: rgb(218, 234, 250);
     color: rgb(0, 0, 0);
@@ -312,8 +317,8 @@
 }
 @media(max-width: 480px){
     .botao1{
-        max-width: 100%;
-        padding:  12px 70px;
+        max-width: 17%;
+        padding:  14px 74px;
         margin-left: -1%;
     }
 }
@@ -358,5 +363,4 @@
         padding:  12px 70px;
         margin-left: -1%;
     }
-}
 }

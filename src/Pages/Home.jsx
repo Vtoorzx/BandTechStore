@@ -5,9 +5,12 @@ import './Home.css';
 import Caixa from '../Components/caixaBoasCompras';
 import BotaoCategoria from '../Components/botaoCategoria';
 import CardsHome from '../Components/cardsHome';
+import { Navigate } from 'react-router-dom';
 
 export default function Home() {
+    
     return (
+        
         <section className='home-container'>
             <div className='home-wrapper'>
 

@@ -1,0 +1,30 @@
+.section-card{
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+.container-imagem{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0auto;
+    width: 100%;
+    background-color: green;
+}
+
+.card-imagem{
+    background-color: red;
+    border-radius: 16px;
+}
+.section-card{
+    justify-content: center;
+    text-align: center;
+    
+}
