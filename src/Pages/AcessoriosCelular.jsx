@@ -4,27 +4,61 @@ import "./AcessoriosCelular.css";
 import logo from "../assets/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import Carrinho from "../Components/carrinho";
-import CardCatalogo from "../Components/cardCatalogo";
+import CardCatalogo from "../Components/cardCatalogo"; 
 
 
 const productsData = [
-  { id: 1, name: "capa", price: 45.0 },
-  { id: 2, name: "pelicula", price: 30.0 },
-  { id: 3, name: "fone de ouvido", price: 20.0 },
+  { id: 1, name: "teste1", price: 45.0, description: "testando.", imageUrl: logo },
+  { id: 2, name: "teste2", price: 30.0, description: "testando.", imageUrl: logo },
+  { id: 3, name: "teste3", price: 20.0, description: "testando.", imageUrl: logo },
+  { id: 4, name: "teste4", price: 80.0, description: "testando.", imageUrl: logo },
+  { id: 5, name: "teste5", price: 80.0, description: "testando.", imageUrl: logo },
+  { id: 6, name: "teste6", price: 80.0, description: "testando.", imageUrl: logo },
+  { id: 7, name: "teste7", price: 80.0, description: "testando.", imageUrl: logo },
 ];
 
 const AcessorioCelular = () => {
   const navigate = useNavigate();
+  
+  
+  const [cartItems, setCartItems] = useState([]);
+
+  
+  const [searchTerm, setSearchTerm] = useState("");
+
   const handleGoBack = () => {
     navigate("/");
   };
-
-  const [searchTerm, setSearchTerm] = useState("");
 
   const handleFilter = (term) => {
     setSearchTerm(term.toLowerCase());
   };
 
+  
+  const handleAddToCart = (productId, quantity) => {
+    const productToAdd = productsData.find(p => p.id === productId);
+
+    if (!productToAdd) return;
+
+    setCartItems(prevItems => {
+      const existingItem = prevItems.find(item => item.id === productId);
+
+      if (existingItem) {
+        
+        return prevItems.map(item =>
+          item.id === productId
+            ? { ...item, quantity: item.quantity + quantity }
+            : item
+        );
+      } else {
+        
+        return [...prevItems, { ...productToAdd, quantity }];
+      }
+    });
+    console.log(`Produto ID ${productId} adicionado ${quantity} vezes ao carrinho!`);
+  };
+
+ 
   const filteredProducts = productsData.filter((product) =>
     product.name.toLowerCase().includes(searchTerm)
   );
@@ -37,50 +71,48 @@ const AcessorioCelular = () => {
         </div>
       </header>
 
+      
       <footer className="container-footer">
         <div className="div-footer">
-
-            <div className="div-botao-voltar">
-                <button className="botao-voltar" onClick={handleGoBack}>
-                voltar
-                </button>
-                <div className="div-texto-acessorios">
-                <p className="texto-acessorios">Acessórios para celular</p>
+          <div className="div-botao-voltar">
+            <button className="botao-voltar" onClick={handleGoBack}>
+              voltar
+            </button>
+            <div className="div-texto-acessorios">
+              <p className="texto-acessorios">Acessórios para celular</p>
             </div>
-            </div>
-
-            
-
+          </div>
+          
           <main className="content-products">
             
-            {/* Campo de Pesquisa */}
+            
             <LupaPesquisa onSearch={handleFilter} />
 
-            {/* Carrinho aparece aqui */}
-            <Carrinho className="carrinho" />
+            
+            <Carrinho className="carrinho" cartItems={cartItems} />
 
-            {/* Lista de Produtos filtrados */}
+           
             <div className="product-list-grid">
+              
+              {filteredProducts.map((product) => (
+                <CardCatalogo
+                  key={product.id}
+                  product={product}
+                  onAddProduct={handleAddToCart}
+                />
+              ))}
+
+              
               {filteredProducts.length === 0 && searchTerm !== "" && (
-                <p>
+                <p className="no-products-message">
                   Nenhum acessório encontrado com o termo "{searchTerm}".
                 </p>
               )}
             </div>
-
           </main>
-
         </div>
       </footer>
-
-      <section>
-        <div className="card-catalogo">
-          <CardCatalogo/>
-        </div>
-      </section>
     </>
-
-    
   );
 };
 

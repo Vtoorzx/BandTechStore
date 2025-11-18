@@ -12,7 +12,6 @@
   
 }
 
-
 .carrossel-track-container {
   overflow: hidden;
   flex: 1;
@@ -68,9 +67,6 @@
 
   }
 }
-
-
-
 
 @media (max-width: 768px) {
   .carrossel-wrapper {
