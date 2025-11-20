@@ -19,7 +19,7 @@ const CardCatalogo = ({ product, onAddProduct }) => {
 
    
     const handleDecreaseQuantity = () => {
-        setQuantity(prevQuantity => Math.max(1, prevQuantity - 1));
+        setQuantity(prevQuantity => Math.max(0, prevQuantity + 1));
     };
 
     const handleIncreaseQuantity = () => {
@@ -29,8 +29,10 @@ const CardCatalogo = ({ product, onAddProduct }) => {
 
     
     const handleAddToCart = () => {
-        onAddProduct(mockProduct.id, quantity); 
-        console.log(`Adicionado ${quantity}x de ${mockProduct.name} ao carrinho.`);
+        if (quantity > 0){
+            onAddProduct(mockProduct.id, quantity);
+            setQuantity(0);
+        }
     };
     
     
