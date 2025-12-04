@@ -1,12 +1,13 @@
 import React from "react";
 import './lupaPesquisa.css';
-const LupaPesquisa = ({onSearch}) => {
-    const handleInputChange = (event) =>{
-        const searchItem = event.target.value.toLawerCase();
-        onSearch(searchItem);
-    }
 
-    return(
+const LupaPesquisa = ({ onSearch }) => {
+    const handleInputChange = (event) => {
+        const searchItem = event.target.value.toLowerCase(); // corrigido
+        onSearch(searchItem);
+    };
+
+    return (
         <div className="search-div">
             <input
                 type="text"
@@ -16,6 +17,6 @@ const LupaPesquisa = ({onSearch}) => {
             />
         </div>
     );
-}
+};
 
 export default LupaPesquisa;

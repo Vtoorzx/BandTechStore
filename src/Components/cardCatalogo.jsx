@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import './cardCatalogo.css';
 
 
+
 const CardCatalogo = ({ product, onAddProduct }) => {
 
     

@@ -1,366 +1,151 @@
-
-
-
 .sectionBotao {
   border-radius: 20px;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   padding: 2vw;
   margin: 30px auto 0;
   width: 78%;
   box-sizing: border-box;
   gap: 20px;
-  
-  
 }
 
-
-
-
-.botao1 {
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); 
-    background-color: white;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 0.5em 3vw;
-    cursor: pointer;
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-   font-family: "Inter", sans-serif;
-  font-weight: 600; 
-  max-width: 250px;
-  margin: 1%;
-  }
-
-.botao1:hover {
-    background-color: rgb(218, 234, 250);
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); 
+/* 🔵 Remover sublinhado e negrito dos links */
+a.botao1,
+a.botao2,
+a.botao3,
+a.botao4,
+a.botao5,
+a.botao6,
+a.botao7 {
+  text-decoration: none;
+  font-weight: 600; /* mantém igual aos botões */
+  color: inherit;
 }
 
-.botao2{
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); 
-    background-color: white;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 8px 59px;
-    cursor: pointer;
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    font-family: "Inter", sans-serif;
-    font-weight: 600; 
-    margin: 1%;
-}
+.botao1,
+.botao2,
+.botao3,
+.botao4,
+.botao5,
+.botao6,
+.botao7 {
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 132, 255);
+  background-color: #fff;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
 
-.botao2:hover {
-    background-color: rgb(218, 234, 250);
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204);  
-}
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 
-.botao3{
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); 
-    background-color: white;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 8px 34px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    font-family: "Inter", sans-serif;
-     font-weight: 600; 
-     margin: 1%;
-}
-.botao3:hover {
-    background-color: rgb(218, 234, 250);
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204);  
-}
-
-.botao4{
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); 
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 8px 16px;
-    cursor: pointer;
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    font-family: "Inter", sans-serif;
-     font-weight: 600; 
-     background-color: white;
-     margin: 1%;
-}
-.botao4:hover {
-    background-color: rgb(218, 234, 250);
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204);  
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
+  margin: 1%;
 }
 
-.botao5{
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); 
-    background-color: white;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 8px 20px;
-    cursor: pointer;
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    font-family: "Inter", sans-serif;
-    font-weight: 600; 
-    botao5:hover {
-    background-color: rgb(218, 234, 250);
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); 
-    margin: 1%;
-}
-}
-
-.botao6{
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255);
-    background-color: white;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 8px 29px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    font-family: "Inter", sans-serif;
-     font-weight: 600; 
-     margin: 1%;
-}
-.botao6:hover {
-    background-color: rgb(218, 234, 250);
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204); 
-}
-
-.botao7{
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border: 1px solid rgb(0, 132, 255); 
-    background-color: white;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    padding: 8px 55px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    font-family: "Inter", sans-serif;
-  font-weight: 600; 
-}
-
+.botao1:hover,
+.botao2:hover,
+.botao3:hover,
+.botao4:hover,
+.botao5:hover,
+.botao6:hover,
 .botao7:hover {
-    background-color: rgb(218, 234, 250);
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 102, 204);
+  background-color: rgb(218, 234, 250);
+  color: #000;
+  border-color: rgb(0, 102, 204);
 }
+
+.botao1 { padding: 0.5em 3vw; max-width: 250px; }
+.botao2 { padding: 8px 59px; }
+.botao3 { padding: 8px 34px; }
+.botao4 { padding: 8px 16px; }
+.botao5 { padding: 8px 20px; }
+.botao6 { padding: 8px 29px; }
+.botao7 { padding: 8px 55px; }
 
 @media (max-width: 1024px) {
   .sectionBotao {
-      
-    max-width: 88%;     
+    max-width: 70%;
     padding: 25px;
     margin-left: 20%;
-    max-width: 70%;
-   
   }
 }
+
 @media (max-width: 768px) {
   .sectionBotao {
     max-width: 55%;
     padding: 30px;
     margin-left: 26%;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    
   }
-}
-@media(max-width: 768px){
-    .botao1{
-        max-width: 100%;
-        padding:  18px 70px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 768px){
-    .botao2{
-        max-width: 100%;
-        padding: 9px 76px;
-    }
+
+  .botao1 { max-width: 100%; padding: 18px 70px; }
+  .botao2 { max-width: 100%; padding: 9px 76px; }
+  .botao3 { max-width: 90%; padding: 8px 45px; }
+  .botao4 { max-width: 20%; padding: 8px 45px; }
+  .botao5 { max-width: 50%; padding: 10px 45px; }
+  .botao6 { max-width: 50%; padding: 8px 42px; }
+  .botao7 { max-width: 50%; padding: 8px 49px; }
 }
 
-@media(max-width:768px){
-    .botao3{
-        max-width: 90%;
-        padding: 8px 45px;
-    }
-}
-@media(max-width:768px){
-    .botao4{
-        max-width: 20%;
-        padding:  8px 45px;
-    }
-}
-@media(max-width:768px){
-    .botao5{
-        max-width: 50%;
-        padding: 10px 45px;
-    }
-}
-@media(max-width:768px){
-    .botao6{
-        max-width: 50%;
-        padding: 8px 42px;
-    }
-}
-@media(max-width:768px){
-    .botao7{
-        max-width: 50%;
-        padding: 8px 49px;
-    }
-}
 @media (max-width: 576px) {
   .sectionBotao {
     max-width: 55%;
     padding: 35px;
     margin-left: 25%;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    
   }
-}
-@media(max-width: 576px){
-    .botao1{
-        max-width: 100%;
-        padding:  12px 84px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 576px){
-    .botao2{
-        max-width: 100%;
-        padding:  12px 84px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 576px){
-    .botao3{
-        max-width: 100%;
-        padding:  10px 65px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 576px){
-    .botao4{
-        max-width: 100%;
-        padding:  10px 84px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 576px){
-    .botao5{
-        max-width: 100%;
-        padding:  10px 84px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 576px){
-    .botao6{
-        max-width: 100%;
-        padding:  10px 84px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 576px){
-    .botao7{
-        max-width: 100%;
-        padding:  10px 84px;
-        margin-left: -1%;
-    }
-}
 
+  .botao1,
+  .botao2,
+  .botao3,
+  .botao4,
+  .botao5,
+  .botao6,
+  .botao7 {
+    max-width: 100%;
+    margin-left: -1%;
+  }
+
+  .botao1 { padding: 12px 84px; }
+  .botao2 { padding: 12px 84px; }
+  .botao3 { padding: 10px 65px; }
+  .botao4 { padding: 10px 84px; }
+  .botao5 { padding: 10px 84px; }
+  .botao6 { padding: 10px 84px; }
+  .botao7 { padding: 10px 84px; }
+}
 
 @media (max-width: 480px) {
   .sectionBotao {
     max-width: 55%;
     padding: 35px;
     margin-left: 26%;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    
   }
-}
-@media(max-width: 480px){
-    .botao1{
-        max-width: 17%;
-        padding:  14px 74px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 480px){
-    .botao2{
-        max-width: 100%;
-        padding:  12px 70px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 480px){
-    .botao3{
-        max-width: 100%;
-        padding:  12px 70px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 480px){
-    .botao4{
-        max-width: 100%;
-        padding:  12px 70px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 480px){
-    .botao5{
-        max-width: 100%;
-        padding:  12px 70px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 480px){
-    .botao6{
-        max-width: 100%;
-        padding:  12px 70px;
-        margin-left: -1%;
-    }
-}
-@media(max-width: 480px){
-    .botao7{
-        max-width: 100%;
-        padding:  12px 70px;
-        margin-left: -1%;
-    }
+
+  .botao1,
+  .botao2,
+  .botao3,
+  .botao4,
+  .botao5,
+  .botao6,
+  .botao7 {
+    max-width: 100%;
+    margin-left: -1%;
+  }
+
+  .botao1 { padding: 14px 74px; }
+  .botao2 { padding: 12px 70px; }
+  .botao3 { padding: 12px 70px; }
+  .botao4 { padding: 12px 70px; }
+  .botao5 { padding: 12px 70px; }
+  .botao6 { padding: 12px 70px; }
+  .botao7 { padding: 12px 70px; }
 }
